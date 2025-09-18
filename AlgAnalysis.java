@@ -30,6 +30,14 @@ public class AlgAnalysis {
 	 */
 	public static void arraySortRuntime(int count, int maxSize){
 		// add your code here (part 1)
+		// this method needs to do the following:
+		// 1. make an array of size maxSize using genArray
+		// 2. randomize it 10 times using randomizeArray
+		// 3. for each randomized array:
+		//    a. make a copy of the array
+		//    b. time how long it takes to sort the copy using Arrays.sort()
+		// 4. re-randomize and repeat steps 3 until count arrays have been sorted
+		// 5. print the things that need to be printed
 	}
 	
 	/**

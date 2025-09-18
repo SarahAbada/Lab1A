@@ -17,7 +17,12 @@
 // ==========================================================================
 
 public class Unique1{
-
+	/**
+	 * returns true if all elements in input are unique, false otherwise
+	 *
+	 * @param  input array of integers
+	 * @return true if all elements in input are unique, false otherwise
+	 */
 	public static boolean unique1(int[] input){
 		for(int i = 0; i < input.length-1; i++){
 			for(int j = i+1; j < input.length; j++){
