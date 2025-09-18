@@ -29,7 +29,28 @@ public class AlgAnalysis {
 	 * @param  count number of arrays tested.
 	 */
 	public static void arraySortRuntime(int count, int maxSize){
-		
+		// steps:
+		// make arrays of each size from count, 2*count, 3*count ... maxSize
+		// randomize each array 10 times, test sort time
+		// print what they asked us to print
+		for (int i=1; i<maxSize;i+=(maxSize/count)){
+			// i is the size of the array
+			long[] times = new long[10];
+			int[] array = genArray(i);
+			for (int j=0; j<10;j++){
+				array = genArray(i);
+				array = randomizeArray(array);
+				// test sort time
+				long startTime = System.nanoTime();
+				Arrays.sort(array);
+				long endTime = System.nanoTime();
+				long timeElapsed = endTime - startTime;
+				times[j] = timeElapsed;
+			}
+			// print results of the worst of the 10 runs
+			Arrays.sort(times);
+			System.out.println("n="+i+" worst time: "+nanoToSeconds(times[9])+" secs");
+		}
 	}
 	
 	/**
