@@ -29,6 +29,7 @@ public class AlgAnalysis {
 	 * @param  count number of arrays tested.
 	 */
 	public static void arraySortRuntime(int count, int maxSize){
+		// add your code here (part 1)
 		// steps:
 		// make arrays of each size from count, 2*count, 3*count ... maxSize
 		// randomize each array 10 times, test sort time
@@ -61,7 +62,20 @@ public class AlgAnalysis {
 	 */
 	public static long unique1Runtime(int n){
 		// add your code here (part 2)
-		return 0;
+		//return 0;
+
+		//make arrays for n sizes with #'s (worst cases)
+		//calling from Unique1 class to check for any duplication 
+		//n^2 can be fast as shown in exercise cases
+
+		int[] array = genArray(n); 
+
+		long startTime = System.nanoTime();
+		boolean result = Unique1.unique1(array);
+
+		long endTime = System.nanoTime();
+		//if ..
+		return endTime - startTime;
 	}
 	
 	/**
@@ -72,7 +86,22 @@ public class AlgAnalysis {
 	 */
 	public static long unique2Runtime(int n){
 		// add your code here (part 2)
-		return 0;
+		//return 0;
+
+		//make arrays for n sizes with #'s (worst cases)
+		//randomizing to stop it from being faster than u1
+		//O(n log n) = avg cases
+
+		int[] array = genArray(n);
+
+		array = randomizeArray(array); 
+
+		long startTime = System.nanoTime();
+		boolean result = Unique2.unique2(array);
+
+		long endTime = System.nanoTime();
+		//if ..
+		return endTime - startTime;
 	}
 	
 	/**
