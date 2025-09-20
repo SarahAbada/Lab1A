@@ -74,8 +74,8 @@ public class AlgAnalysis {
 		boolean result = Unique1.unique1(array);
 
 		long endTime = System.nanoTime();
-		//if ..
-		return endTime - startTime;
+		long timeresult = endTime - startTime;
+		return timeresult;
 	}
 	
 	/**
@@ -89,7 +89,7 @@ public class AlgAnalysis {
 		//return 0;
 
 		//make arrays for n sizes with #'s (worst cases)
-		//randomizing to stop it from being faster than u1
+		//randomizing to 
 		//O(n log n) = avg cases
 
 		int[] array = genArray(n);
@@ -100,8 +100,9 @@ public class AlgAnalysis {
 		boolean result = Unique2.unique2(array);
 
 		long endTime = System.nanoTime();
-		//if ..
-		return endTime - startTime;
+		long timeresult = endTime - startTime;
+		
+		return timeresult;
 	}
 	
 	/**
