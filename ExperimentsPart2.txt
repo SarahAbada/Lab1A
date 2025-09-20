@@ -1,0 +1,51 @@
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+1
+Enter n value
+50
+Time Elapsed: 6.46E-4 secs
+
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+1
+Enter n value
+10000
+Time Elapsed: 0.0136245 secs
+
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+1
+Enter n value
+100000
+Time Elapsed: 0.7038083 secs
+
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+1
+Enter n value
+200000
+Time Elapsed: 2.8491866 secs
+
+///////////////////////////////////////////////////////////////
+
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+2
+Enter n value
+50
+Time Elapsed: 7.838E-4 secs
+
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+2
+Enter n value
+10000
+Time Elapsed: 0.0038809 secs
+
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+2
+Enter n value
+20000
+Time Elapsed: 0.0083202 secs
+
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+2
+Enter n value
+200000
+Time Elapsed: 0.0633123 secs
+
+
